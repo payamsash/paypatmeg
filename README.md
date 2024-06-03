@@ -1,2 +1,2 @@
 # paypatmeg
-Exploring Frequency-Specific Cortical Connectivity in Individuals with Tinnitus through Graph-Based Learning
+Frequency-Specific Cortical Connectivity in Tinnitus via Graph Learning
