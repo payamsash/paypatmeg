@@ -9,7 +9,7 @@ from nilearn.plotting import plot_connectome
 
 
 ###### fig 1_A ######
-fname = Path.cwd().parent / "identifiability_matrix" / "graph_comparison.csv"
+fname = Path.cwd().parent / "data" / "graph_comparison.csv"
 df = pd.read_csv(fname)
 vals = [0.25, 0.5, 1, 1.5]
 df = df.query("alpha in @vals and beta in @vals")
@@ -25,7 +25,7 @@ g.tight_layout()
 g.savefig(Path.cwd().parent / "figures" / "2.pdf")
 
 ###### fig 1_B ######
-fname = Path.cwd().parent / "identifiability_matrix" / "ranks.csv"
+fname = Path.cwd().parent / "data" / "ranks.csv"
 df = pd.read_csv(fname)
 
 sns.set_theme(style="white", rc={"axes.facecolor": (0, 0, 0, 0)})
@@ -40,7 +40,7 @@ g.tight_layout()
 g.savefig(Path.cwd().parent / "figures" / "1.pdf")
 
 ###### fig 1_C ######
-fname = Path.cwd().parent / "identifiability_matrix" / "connections.csv"
+fname = Path.cwd().parent / "data" / "connections.csv"
 df = pd.read_csv(fname)
 df_alpha_1 = df[(df["freq_band"]=="alpha") & (df["label_2"]=="superiorfrontal-lh")]
 df_alpha_2 = df[(df["freq_band"]=="alpha") & (df["label_2"]=="superiorfrontal-rh")]
