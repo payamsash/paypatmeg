@@ -142,3 +142,19 @@ plot_connectome(adjacency_matrix=graph, node_coords=node_coords, display_mode="l
                 edge_threshold="90%")
 fig.tight_layout()
 fig.savefig(Path.cwd().parent / "figures" / "3.pdf")
+
+###### fig supplementary ######
+fname = Path.cwd().parent / "data" / "graph_comparison.csv"
+df = pd.read_csv(fname)
+vals = [0.25, 0.5, 1, 1.5]
+df = df.query("alpha in @vals and beta in @vals")
+
+sns.set_theme(style="white", rc={"axes.facecolor": (0, 0, 0, 0)})
+g = sns.FacetGrid(df, col="alpha", row="frequency_range", hue="beta", height=2.5, aspect=1.3, palette="YlGnBu_d", legend_out=True)
+kwargs = {"markersize": 2.5, "lw": 1.5}
+g.map_dataframe(sns.pointplot, x="times_used", y="euc_dist", **kwargs)
+g.set(xticklabels=[], title="", ylabel="", xlabel="")
+legend_kwargs = {"bbox_to_anchor": (0.45, 0.6, 0.5, 0.5)}
+g.add_legend(**legend_kwargs)
+g.tight_layout()
+g.savefig(Path.cwd().parent / "figures" / "5.pdf")
