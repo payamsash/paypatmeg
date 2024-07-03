@@ -1,5 +1,5 @@
 # paypatmeg
-Frequency-Specific Cortical Connectivity in Tinnitus via Graph Learning
+## Frequency-Specific Cortical Connectivity in Tinnitus via Graph Learning
 
 Tinnitus, defined as the perception of sound without an external source, affects a substantial portion of the population and can cause significant individual suffering. However, the understanding of the altered brain connectome in tinnitus remains limited.
 %% graph learning
