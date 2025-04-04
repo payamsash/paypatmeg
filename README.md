@@ -5,4 +5,7 @@ Tinnitus, the perception of sound without an external source, affects a substant
 Our study reveals that tinnitus manifests itself through highly individualized and heterogeneous connectome profiles. These unique brain fingerprints underscore the need to focus on individual variability rather than group-level differences to gain a more nuanced understanding of tinnitus.  
 Personalized FC may pave the way for the development of patient-centric tinnitus models to improve the optimization of treatment strategies for individualized care.
 
-Preprint available at following [link](https://www.biorxiv.org/content/10.1101/2025.03.10.642147v2.full.pdf)
+Preprint available at following [link](https://doi.org/10.1101/2025.03.10.642147)
+
+
+
